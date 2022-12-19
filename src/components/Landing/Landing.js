@@ -14,6 +14,24 @@ import {
     FaGithub,
     FaYoutube,
     FaBlogger,
+    FaMedium,
+    FaInstagram,
+    FaFacebook,
+    FaDev,
+    FaStackOverflow,
+    FaHackerrank,
+    FaCodepen,
+    FaBehance,
+    FaDribbble,
+    FaFigma,
+    FaSlack,
+    FaDiscord,
+    FaTelegram,
+    FaWhatsapp,
+    FaSkype,
+    FaTwitch,
+    FaReddit,
+    
 } from 'react-icons/fa';
 
 function Landing() {
@@ -124,6 +142,19 @@ function Landing() {
                                     className='landing--social'
                                     style={{ color: theme.secondary }}
                                     aria-label='YouTube'
+                                />
+                            </a>
+                        )}
+                        {socialsData.medium && (
+                            <a
+                                href={socialsData.medium}
+                                target='_blank'
+                                rel='noreferrer'
+                            >       
+                                <FaMedium
+                                    className='landing--social'
+                                    style={{ color: theme.secondary }}
+                                    aria-label='Medium'
                                 />
                             </a>
                         )}

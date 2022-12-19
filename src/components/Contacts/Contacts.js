@@ -176,7 +176,7 @@ function Contacts() {
                                     Name
                                 </label>
                                 <input
-                                    placeholder='John Doe'
+                                    placeholder='Write your name here'
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
                                     type='text'
@@ -192,7 +192,7 @@ function Contacts() {
                                     Email
                                 </label>
                                 <input
-                                    placeholder='John@doe.com'
+                                    placeholder='Write your email here'
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     type='email'
@@ -292,7 +292,7 @@ function Contacts() {
                                 {contactsData.email}
                             </p>
                         </a>
-                        <a
+                        {/* <a
                             href={`tel:${contactsData.phone}`}
                             className='personal-details'
                         >
@@ -310,7 +310,7 @@ function Contacts() {
                             <p style={{ color: theme.tertiary }}>
                                 {contactsData.address}
                             </p>
-                        </div>
+                        </div> */}
 
                         <div className='socialmedia-icons'>
                             {socialsData.twitter && (
